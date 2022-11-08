@@ -4,7 +4,7 @@ import (
         "github.com/gofiber/fiber"
 )
 
-func GetConsortiums(c *fiber.Ctx) {
+func GetConsortiums(db *sql.DB, c *fiber.Ctx) {
         c.SendString("All Books x")
 }
 
