@@ -5,7 +5,7 @@ import (
 )
 
 func GetConsortiums(c *fiber.Ctx) {
-        c.SendString("All Books")
+        c.SendString("All Books x")
 }
 
 func GetConsortium(c *fiber.Ctx) {
