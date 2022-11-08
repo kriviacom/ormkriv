@@ -5,17 +5,17 @@ import (
 )
 
 func GetConsortiums(c *fiber.Ctx) {
-        c.Send("All Books")
+        c.SendString("All Books")
 }
 
 func GetConsortium(c *fiber.Ctx) {
-        c.Send("Single Book")
+        c.SendString("Single Book")
 }
 
 func NewGetConsortium(c *fiber.Ctx) {
-        c.Send("New Book")
+        c.SendString("New Book")
 }
 
 func DeleteConsortium(c *fiber.Ctx) {
-        c.Send("Delete Book")
+        c.SendString("Delete Book")
 }
