@@ -7,20 +7,19 @@ import (
 )
 
 func GetConsortiums(c *fiber.Ctx, db *sql.DB) {
-        c.SendString("All Books x")
-        
+     
 	rows, err := db.Query("SELECT name FROM consortium")
 	if err != nil {
+		fmt.Println( "error llamado" )
 		panic(err)
 		}
 
 	for rows.Next() {
 		var name string
 
-		/* Leemos el registro */
 		rows.Scan(&name)
-
-		/* Escribimos el tí­tulo por pantalla */
+                c.SendString(""+name)
+        
 		fmt.Println( "Post title: "+name )
 		}
 	}
