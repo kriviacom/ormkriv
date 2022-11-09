@@ -4,7 +4,6 @@ import (
         "github.com/gofiber/fiber"
         _ "github.com/go-sql-driver/mysql"
         "database/sql"
-        "fmt"
 )
 
 func GetConsortiums(c *fiber.Ctx, db *sql.DB) {
