@@ -7,13 +7,7 @@ import (
         "fmt"
 )
 
-var db *sql.DB
-
-func setDatabase(db2 *sql.DB) {
-        db:= db2
-}
-
-func GetConsortiums(c *fiber.Ctx) {
+func GetConsortiums(c *fiber.Ctx, db *sql.DB) {
         c.SendString("All Books x")
 }
 
