@@ -22,11 +22,8 @@ func GetConsortiums(c *fiber.Ctx, db *sql.DB) {
         
 		fmt.Println( "Post title: "+name )
 		}
-	}
-        
-        
-        
 }
+                
 
 func GetConsortium(c *fiber.Ctx) {
         c.SendString("Single Book")
