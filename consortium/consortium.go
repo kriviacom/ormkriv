@@ -12,7 +12,7 @@ var db *sql.DB
 func setDatabase(db2 *sql.DB)
 {
         
-        db = db2
+        db := db2
            
 }
 
