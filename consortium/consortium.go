@@ -12,7 +12,7 @@ var db *sql.DB
 func setDatabase(s string)
 {
         var err error
-        db, err = sql.Open("mysql", s)
+        db, err = *sql.Open("mysql", s)
         var v = "Não conseguiu conectar ao banco de dados"
         
         if err != nil {
