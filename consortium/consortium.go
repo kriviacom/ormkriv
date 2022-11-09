@@ -9,20 +9,11 @@ import (
 
 var db *sql.DB
 
-func setDatabase(s string)
+func setDatabase(db2 *sql.DB)
 {
-        var err error
-        db, err = *sql.Open("mysql", s)
-        var v = "Não conseguiu conectar ao banco de dados"
         
-        if err != nil {
-                fmt.Println(v)
-                panic(err)
-                }
-
-        fmt.Println("conexão OK!")
-        fmt.Println(db)
-        
+        db = db2
+           
 }
 
 func GetConsortiums(c *fiber.Ctx) {
